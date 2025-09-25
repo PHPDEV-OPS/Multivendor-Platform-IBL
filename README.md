@@ -172,7 +172,7 @@ You can login / register (depending on seeded accounts) and test features:
 * Placing orders
 * Admin operations
 
-If there are any artisan commands (scheduled tasks, queues), document how to run or schedule them (e.g. `php artisan queue:work`, cron jobs).
+
 
 ---
 
