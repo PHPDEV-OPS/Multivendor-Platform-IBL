@@ -1,1 +1,0 @@
-<strong>{{ $order_package->number_of_product }}</strong>

@@ -1,0 +1,16 @@
+[24-Aug-2025 01:02:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/ProfileTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/ProfileTest.php on line 5
+[24-Aug-2025 02:45:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function it() in /home/tunufosx/tununue/tests/Feature/ExampleTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/ExampleTest.php on line 3
+[25-Aug-2025 18:17:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/ProfileTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/ProfileTest.php on line 5
+[25-Aug-2025 19:54:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function it() in /home/tunufosx/tununue/tests/Feature/ExampleTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/ExampleTest.php on line 3

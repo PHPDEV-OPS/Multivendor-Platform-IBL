@@ -3,71 +3,28 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Models\User;
-use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Pagination\Paginator;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\URL;
-use Laravel\Scout\Console\ImportCommand;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
-        $this->app->register(TranslationServiceProvider::class);
-
+        //
     }
 
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        // if (!$this->app->runningInConsole()) {
-        //     $this->commands([
-        //         ImportCommand::class,
-        //     ]);
-        // }
-        if (!Collection::hasMacro('paginate')) {
-            Collection::macro('paginate',
-                function ($perPage = 15, $page = null, $options = []) {
-                $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
-                return (new LengthAwarePaginator(
-                    $this->forPage($page, $perPage), $this->count(), $perPage, $page, $options))
-                    ->withPath('');
-            });
-        }
-
-        if (config('app.force_https')) {
-            URL::forceScheme('https');
-        }
-
-
-        Schema::defaultStringLength(191);
-
-
-        Validator::extend('check_unique_phone', function($attribute, $value, $parameters, $validator) {
-            if (is_numeric($value)) {
-              $data=User::where('phone',$value)->first();
-              if($data){
-                return false;
-               }
-                return true;
+        // Add global helper for EAT timezone conversion
+        if (!function_exists('toEAT')) {
+            function toEAT($date, $format = 'F d, Y \a\t g:i A') {
+                if (!$date) return 'Not available';
+                return $date->setTimezone('Africa/Nairobi')->format($format);
             }
-            return true;
-
-        });
-
-        Paginator::useBootstrap();
-
+        }
     }
 }

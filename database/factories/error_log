@@ -1,0 +1,8 @@
+[24-Aug-2025 20:44:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/tunufosx/tununue/database/factories/UserFactory.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/database/factories/UserFactory.php on line 12
+[26-Aug-2025 13:56:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/tunufosx/tununue/database/factories/UserFactory.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/database/factories/UserFactory.php on line 12

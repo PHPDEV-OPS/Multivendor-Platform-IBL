@@ -1,0 +1,148 @@
+[23-Aug-2025 14:10:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php on line 8
+[23-Aug-2025 14:11:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php on line 5
+[23-Aug-2025 18:19:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php on line 6
+[23-Aug-2025 22:01:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php on line 7
+[24-Aug-2025 08:17:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php on line 3
+[24-Aug-2025 13:42:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php on line 7
+[24-Aug-2025 13:46:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php on line 5
+[24-Aug-2025 13:47:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php on line 8
+[24-Aug-2025 13:48:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php on line 6
+[24-Aug-2025 13:52:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php on line 3
+[24-Aug-2025 13:58:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php on line 7
+[24-Aug-2025 14:01:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php on line 3
+[24-Aug-2025 14:05:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php on line 8
+[24-Aug-2025 14:08:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php on line 5
+[24-Aug-2025 14:09:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php on line 6
+[24-Aug-2025 14:12:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php on line 3
+[24-Aug-2025 14:16:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php on line 7
+[25-Aug-2025 06:13:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php on line 8
+[25-Aug-2025 06:15:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php on line 5
+[25-Aug-2025 10:18:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php on line 6
+[25-Aug-2025 14:10:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php on line 7
+[25-Aug-2025 15:21:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/AuthenticationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/AuthenticationTest.php on line 5
+[26-Aug-2025 01:12:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php on line 3
+[26-Aug-2025 06:48:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php on line 6
+[26-Aug-2025 06:49:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php on line 8
+[26-Aug-2025 06:54:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php on line 5
+[26-Aug-2025 06:55:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php on line 7
+[26-Aug-2025 06:57:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/AuthenticationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/AuthenticationTest.php on line 5
+[26-Aug-2025 06:59:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php on line 8
+[26-Aug-2025 07:00:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php on line 6
+[26-Aug-2025 07:04:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php on line 3
+[26-Aug-2025 07:41:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordUpdateTest.php on line 6
+[26-Aug-2025 07:42:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/EmailVerificationTest.php on line 8
+[26-Aug-2025 07:43:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/AuthenticationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/AuthenticationTest.php on line 5
+[26-Aug-2025 07:44:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordResetTest.php on line 7
+[26-Aug-2025 07:45:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/RegistrationTest.php on line 3
+[26-Aug-2025 07:49:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Feature/Auth/PasswordConfirmationTest.php on line 5

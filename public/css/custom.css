@@ -117,3 +117,194 @@ select#city + .nice-select .list{
         padding: 5px;
     }
 }
+
+/* Hot Categories Carousel Additional Styles */
+.hot_categories_active {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow: hidden;
+}
+
+.hot_categories_active.smooth-scroll-active {
+    transition: all 0.3s ease;
+}
+
+.hot_categories_active .owl-stage {
+    display: flex;
+    align-items: stretch;
+    transition: transform 0.8s ease-in-out;
+}
+
+.hot_categories_active .owl-item {
+    display: flex;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hot_categories_active .owl-item > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation arrows styling */
+.hot_categories_active .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    pointer-events: none;
+}
+
+.hot_categories_active .owl-nav button {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.hot_categories_active .owl-nav button:hover {
+    background: #fff !important;
+    color: #007bff !important;
+    border-color: #007bff !important;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.hot_categories_active .owl-nav .owl-prev {
+    left: -20px;
+}
+
+.hot_categories_active .owl-nav .owl-next {
+    right: -20px;
+}
+
+/* Hide navigation on mobile */
+@media (max-width: 575px) {
+    .hot_categories_active .owl-nav {
+        display: none;
+    }
+}
+
+/* Touch/swipe improvements for mobile */
+@media (max-width: 768px) {
+    .hot_categories_active {
+        touch-action: pan-x;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .hot_categories_active .amaz_home_cartBox {
+        cursor: grab;
+        transition: transform 0.2s ease;
+    }
+
+    .hot_categories_active .amaz_home_cartBox:active {
+        cursor: grabbing;
+        transform: scale(0.98);
+    }
+
+    /* Smoother scrolling on mobile */
+    .hot_categories_active .owl-stage {
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+
+/* Ensure proper spacing and alignment */
+.hot_categories_active .amaz_home_cartBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hot_categories_active .amaz_home_cartBox:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hot_categories_active .amaz_home_cartBox .img_box {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.hot_categories_active .amaz_home_cartBox:hover .img_box {
+    transform: scale(1.05);
+}
+
+.hot_categories_active .amaz_home_cartBox .amazcat_text_box {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.hot_categories_active .amaz_home_cartBox .amazcat_text_box h4 {
+    transition: color 0.3s ease;
+}
+
+.hot_categories_active .amaz_home_cartBox:hover .amazcat_text_box h4 a {
+    color: #007bff;
+}
+
+@media (max-width: 576px) {
+    .hot_categories_active .amaz_home_cartBox .amazcat_text_box {
+        margin-left: 10px;
+    }
+
+    .hot_categories_active .amaz_home_cartBox:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* Smooth loading animation */
+.hot_categories_active .owl-item {
+    opacity: 0;
+    animation: fadeInSlide 0.6s ease forwards;
+}
+
+.hot_categories_active .owl-item.active {
+    opacity: 1;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Performance optimizations */
+.hot_categories_active {
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.hot_categories_active .owl-stage {
+    will-change: transform;
+    backface-visibility: hidden;
+}

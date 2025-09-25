@@ -4,57 +4,54 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Seller\Entities\SellerProductSKU;
-use Modules\Shipping\Entities\ShippingMethod;
-use Modules\GiftCard\Entities\GiftCard;
-use Carbon\Carbon;
 
 class Cart extends Model
 {
-    protected $guarded = ['id'];
     use HasFactory;
 
-    protected $casts = ['qty' => 'integer','price' => 'double','total_price' => 'double','is_select' => 'integer'];
+    protected $fillable = [
+        'session_id',
+        'user_id',
+        'product_id',
+        'quantity',
+        'price',
+        'options',
+    ];
+
+    protected $casts = [
+        'price' => 'decimal:2',
+        'options' => 'array',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function product()
     {
-        return $this->belongsTo(SellerProductSKU::class,'product_id','id');
+        return $this->belongsTo(Product::class);
     }
-    public function shippingMethod()
+
+    public function getSubtotalAttribute()
     {
-        return $this->belongsTo(ShippingMethod::class,'shipping_method_id','id');
+        return $this->price * $this->quantity;
     }
-    public function giftCard()
+
+    public function scopeBySession($query, $sessionId)
     {
-        return $this->belongsTo(GiftCard::class,'product_id','id');
+        return $query->where('session_id', $sessionId);
     }
 
-    public function scopeTotalCart($query, $type)
+    public function scopeByUser($query, $userId)
     {
-        $year = Carbon::now()->year;
-        if ($type == "today") {
-            return $query->whereBetween('created_at', [Carbon::now()->format('y-m-d')." 00:00:00", Carbon::now()->format('y-m-d')." 23:59:59"])->get()->count();
-        }
-        if ($type == "week") {
-            return $query->whereBetween('created_at', [Carbon::now()->subDays(7)->format('y-m-d')." 00:00:00", Carbon::now()->format('y-m-d')." 23:59:59"])->get()->count();
-        }
-        if ($type == "month") {
-            $month = Carbon::now()->month;
-            $date_1 = Carbon::create($year, $month)->startOfMonth()->format('Y-m-d')." 00:00:00";
-            return $query->whereBetween('created_at', [$date_1, Carbon::now()->format('y-m-d')." 23:59:59"])->get()->count();
-        }
-        if ($type == "year") {
-            $date_1 = Carbon::create($year, 1)->startOfMonth()->format('Y-m-d')." 00:00:00";
-            return $query->whereBetween('created_at', [$date_1, Carbon::now()->format('y-m-d')." 23:59:59"])->get()->count();
-        }
-
+        return $query->where('user_id', $userId);
     }
 
-    public function seller(){
-        return $this->belongsTo(User::class, 'seller_id', 'id');
-    }
-
-    public function customer(){
-        return $this->belongsTo(User::class,'user_id', 'id')->withDefault();
+    public function scopeActive($query)
+    {
+        return $query->whereHas('product', function($q) {
+            $q->where('status', 'active')->where('stock_quantity', '>', 0);
+        });
     }
 }

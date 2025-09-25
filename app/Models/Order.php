@@ -2,218 +2,136 @@
 
 namespace App\Models;
 
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Model;
-use Modules\GST\Entities\OrderPackageGST;
-use Modules\Marketing\Entities\CouponUse;
-use Modules\GiftCard\Entities\GiftCardUse;
-use Modules\Wallet\Entities\WalletBalance;
-use Modules\Customer\Entities\CustomerAddress;
-use Modules\OrderManage\Entities\CancelReason;
-use Modules\PaymentGateway\Entities\PaymentMethod;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\Affiliate\Entities\AffiliateReferralPayment;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Order extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
-    protected $casts = [
-        "grand_total" => "double",
-        "sub_total" => "double",
-        "tax_amount" => "double",
-        "is_paid" => "integer",
-        "is_confirmed" => "integer",
-        "is_completed" => "integer",
-        "is_cancelled" => "integer",
-        "customer_id" => "integer",
-        "order_payment_id" => "integer",
-        "order_status" => "string",
-        "shipping_total" => "double"
+    protected $fillable = [
+        'order_number',
+        'user_id',
+        'vendor_id',
+        'subtotal',
+        'tax_amount',
+        'shipping_amount',
+        'discount_amount',
+        'total_amount',
+        'commission_amount',
+        'vendor_amount',
+        'status',
+        'payment_status',
+        'payment_method',
+        'payment_transaction_id',
+        'checkout_request_id',
+        'shipping_address',
+        'billing_address',
+        'shipping_method',
+        'tracking_number',
+        'notes',
+        'paid_at',
+        'shipped_at',
+        'delivered_at',
     ];
 
-    protected $guarded = [];
+    protected $casts = [
+        'subtotal' => 'decimal:2',
+        'tax_amount' => 'decimal:2',
+        'shipping_amount' => 'decimal:2',
+        'discount_amount' => 'decimal:2',
+        'total_amount' => 'decimal:2',
+        'commission_amount' => 'decimal:2',
+        'vendor_amount' => 'decimal:2',
+        'shipping_address' => 'array',
+        'billing_address' => 'array',
+        'paid_at' => 'datetime',
+        'shipped_at' => 'datetime',
+        'delivered_at' => 'datetime',
+    ];
 
-    public function customer(){
-        return $this->belongsTo(User::class,'customer_id','id');
-    }
-
-    public function cancel_reason(){
-        return $this->belongsTo(CancelReason::class,'cancel_reason_id','id');
-    }
-
-    public function packages(){
-        return $this->hasMany(OrderPackageDetail::class,'order_id','id');
-    }
-
-    public function gift_card_uses(){
-        return $this->hasMany(GiftCardUse::class,'order_id','id');
-    }
-
-    public function guest_info()
+    public function user()
     {
-        return $this->hasOne(GuestOrderDetail::class,'order_id','id');
+        return $this->belongsTo(User::class);
     }
 
-    public function order_payment(){
-        return $this->belongsTo(OrderPayment::class,'order_payment_id', 'id');
-    }
-
-    public function shipping_address(){
-        return $this->belongsTo(CustomerAddress::class, 'customer_shipping_address','id');
-    }
-
-    public function billing_address(){
-        return $this->belongsTo(CustomerAddress::class, 'customer_billing_address','id');
-    }
-    public function address(){
-        return $this->hasOne(OrderAddressDetail::class,'order_id', 'id');
-    }
-
-    public function wallets()
+    public function vendor()
     {
-        return $this->morphMany(WalletBalance::class, 'walletable');
+        return $this->belongsTo(User::class, 'vendor_id');
     }
-    public function coupon(){
-        return $this->hasOne(CouponUse::class,'order_id','id');
-    }
-    public function method()
+
+    public function items()
     {
-        return $this->belongsTo(PaymentMethod::class,'payment_type');
+        return $this->hasMany(OrderItem::class);
     }
 
-    public function getGatewayNameAttribute()
+    public function transactions()
     {
-        switch ($this->method->slug) {
-            case 'cash-on-delivery':
-                return __("payment_gatways.cash_on_delivery");
-                break;
-            case 'wallet':
-                return __("payment_gatways.wallet");
-                break;
-            case 'paypal':
-                return __("payment_gatways.paypal");
-                break;
-            case 'stripe':
-                return __("payment_gatways.stripe");
-                break;
-            case 'paystack':
-                return __("payment_gatways.paystack");
-                break;
-            case 'razorpay':
-                return __("payment_gatways.razorpay");
-                break;
-            case 'bank-payment':
-                return __("payment_gatways.bank_payment");
-                break;
-            case 'instamojo':
-                return __("payment_gatways.instamojo");
-                break;
-            case 'paytm':
-                return __("payment_gatways.paytm");
-                break;
-            case 'midtrans':
-                return __("payment_gatways.midtrans");
-                break;
-            case 'payumoney':
-                return __("payment_gatways.payumoney");
-                break;
-            case 'jazzcash':
-                return __("payment_gatways.jazzcash");
-                break;
-            case 'google-pay':
-                return __("payment_gatways.google_pay");
-                break;
-            case 'flutterwave':
-                return __("payment_gatways.flutter_wave_payment");
-                break;
-            case 'bkash':
-                return __("payment_gatways.bkash");
-                break;
-            case 'sslcommerz':
-                return __("payment_gatways.ssl_commerz");
-                break;
-            case 'mercado-pago':
-                return __("payment_gatways.mercado_pago");
-                break;
-            case 'tabby':
-                return __("payment_gatways.tabby");
-                break;
-            case 'ccavenue':
-                return __("payment_gatways.ccavenue");
-                break;
-            default:
-                return $this->payment_method;
-                break;
-        }
+        return $this->hasMany(Transaction::class);
     }
 
-    public function getTotalGstAmountAttribute()
+    public function supportTickets()
     {
-        $order_id = $this->id;
-        return OrderPackageGST::whereHas('order_package', function($q) use($order_id){
-            $q->where('order_id', $order_id);
-        })->get()->sum('amount');
+        return $this->hasMany(SupportTicket::class);
     }
 
-    public function scopeTotalSaleCount($query, $type)
+    public function scopePending($query)
     {
-        $year = Carbon::now()->year;
-        if ($type == "today") {
-            return $query->whereBetween('created_at', [Carbon::now()->format('y-m-d')." 00:00:00", Carbon::now()->format('y-m-d')." 23:59:59"])->where('is_confirmed',1)->sum('grand_total');
-        }
-        if ($type == "week") {
-            return $query->whereBetween('created_at', [Carbon::now()->subDays(7)->format('y-m-d')." 00:00:00", Carbon::now()->format('y-m-d')." 23:59:59"])->where('is_confirmed',1)->sum('grand_total');
-        }
-        if ($type == "month") {
-            $month = Carbon::now()->month;
-            $date_1 = Carbon::create($year, $month)->startOfMonth()->format('Y-m-d')." 00:00:00";
-            return $query->whereBetween('created_at', [$date_1, Carbon::now()->format('y-m-d')." 23:59:59"])->where('is_confirmed',1)->sum('grand_total');
-        }
-        if ($type == "year") {
-            $date_1 = Carbon::create($year, 1)->startOfMonth()->format('Y-m-d')." 00:00:00";
-            return $query->whereBetween('created_at', [$date_1, Carbon::now()->format('y-m-d')." 23:59:59"])->where('is_confirmed',1)->sum('grand_total');
-        }
-
+        return $query->where('status', 'pending');
     }
 
-    public function scopeOrderInfo($query, $type, $state)
+    public function scopeProcessing($query)
     {
-        $year = Carbon::now()->year;
-        if ($type == "today") {
-            $query->whereBetween('created_at', [Carbon::now()->format('y-m-d')." 00:00:00", Carbon::now()->format('y-m-d')." 23:59:59"]);
-        }
-        elseif ($type == "week") {
-            $query->whereBetween('created_at', [Carbon::now()->subDays(7)->format('y-m-d')." 00:00:00", Carbon::now()->format('y-m-d')." 23:59:59"]);
-        }
-        elseif ($type == "month") {
-            $month = Carbon::now()->month;
-            $date_1 = Carbon::create($year, $month)->startOfMonth()->format('Y-m-d')." 00:00:00";
-            $query->whereBetween('created_at', [$date_1, Carbon::now()->format('y-m-d')." 23:59:59"]);
-        }
-        elseif ($type == "year") {
-            $date_1 = Carbon::create($year, 1)->startOfMonth()->format('Y-m-d')." 00:00:00";
-            $query->whereBetween('created_at', [$date_1, Carbon::now()->format('y-m-d')." 23:59:59"]);
-        }
-
-        if ($state === "all") {
-            return $query->count();
-        }
-        elseif ($state === 0) {
-            return $query->where('is_confirmed', 0)->count();
-        }
-        elseif ($state === 1) {
-            return $query->where('is_completed', 1)->count();
-        }
-
+        return $query->where('status', 'processing');
     }
 
-    public function affiliateUser(){
-        return $this->hasOne(AffiliateReferralPayment::class,'order_id','id');
+    public function scopeShipped($query)
+    {
+        return $query->where('status', 'shipped');
     }
 
-    public function affiliatePayments(){
-        return $this->hasMany(AffiliateReferralPayment::class,'order_id','id');
+    public function scopeDelivered($query)
+    {
+        return $query->where('status', 'delivered');
     }
 
+    public function scopeCancelled($query)
+    {
+        return $query->where('status', 'cancelled');
+    }
+
+    public function scopePaid($query)
+    {
+        return $query->where('payment_status', 'paid');
+    }
+
+    public function scopePendingPayment($query)
+    {
+        return $query->where('payment_status', 'pending');
+    }
+
+    public function getStatusBadgeClassAttribute()
+    {
+        return match($this->status) {
+            'pending' => 'status-pending',
+            'processing' => 'status-pending',
+            'shipped' => 'status-active',
+            'delivered' => 'status-active',
+            'cancelled' => 'status-inactive',
+            'refunded' => 'status-inactive',
+            default => 'status-pending',
+        };
+    }
+
+    public function getPaymentStatusBadgeClassAttribute()
+    {
+        return match($this->payment_status) {
+            'paid' => 'status-active',
+            'pending' => 'status-pending',
+            'failed' => 'status-inactive',
+            'refunded' => 'status-inactive',
+            default => 'status-pending',
+        };
+    }
 }

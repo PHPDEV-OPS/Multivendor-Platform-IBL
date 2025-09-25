@@ -1,1 +1,0 @@
-<a href="javascript:;"class="primary-btn radius_30px remove_follow  fix-gr-bg mt-repeater-add" data-id="{{$data->customer_id}}"></i>{{__('common.remove')}}</a>

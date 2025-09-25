@@ -1,0 +1,40 @@
+[23-Aug-2025 07:57:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php on line 12
+[23-Aug-2025 13:15:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php on line 12
+[23-Aug-2025 13:16:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php on line 12
+[23-Aug-2025 13:17:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php on line 12
+[23-Aug-2025 15:47:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/tunufosx/tununue/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/AppServiceProvider.php on line 7
+[25-Aug-2025 01:27:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php on line 12
+[25-Aug-2025 05:11:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php on line 12
+[25-Aug-2025 05:12:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php on line 12
+[25-Aug-2025 05:12:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/MiddlewareServiceProvider.php on line 12
+[25-Aug-2025 07:44:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/tunufosx/tununue/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Providers/AppServiceProvider.php on line 7

@@ -1,0 +1,108 @@
+[24-Aug-2025 22:27:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[25-Aug-2025 01:54:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[26-Aug-2025 05:50:47 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php on line 13
+[26-Aug-2025 15:28:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[26-Aug-2025 18:53:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[27-Aug-2025 18:07:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php on line 13
+[31-Aug-2025 19:05:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[31-Aug-2025 19:08:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[31-Aug-2025 19:12:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php on line 13
+[31-Aug-2025 19:37:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[31-Aug-2025 19:38:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[31-Aug-2025 19:48:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php on line 13
+[31-Aug-2025 19:50:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[31-Aug-2025 19:56:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[31-Aug-2025 20:13:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[31-Aug-2025 20:17:18 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php on line 13
+[31-Aug-2025 20:18:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[01-Sep-2025 13:57:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[01-Sep-2025 13:58:43 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[01-Sep-2025 14:04:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php on line 13
+[01-Sep-2025 14:25:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php on line 13
+[01-Sep-2025 14:26:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[01-Sep-2025 14:28:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[01-Sep-2025 14:35:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[01-Sep-2025 14:41:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/OrderController.php on line 10
+[01-Sep-2025 14:44:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/DashboardController.php on line 15
+[01-Sep-2025 14:47:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/User/ProfileController.php on line 13

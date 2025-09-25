@@ -1,0 +1,176 @@
+[23-Aug-2025 18:53:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php on line 9
+[23-Aug-2025 20:03:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php on line 8
+[23-Aug-2025 21:14:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php on line 12
+[23-Aug-2025 21:14:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php on line 18
+[23-Aug-2025 21:14:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php on line 10
+[23-Aug-2025 21:14:47 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php on line 10
+[24-Aug-2025 00:25:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CartController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CartController.php on line 10
+[25-Aug-2025 11:03:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php on line 9
+[25-Aug-2025 12:12:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php on line 8
+[25-Aug-2025 13:23:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php on line 18
+[25-Aug-2025 13:23:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php on line 10
+[25-Aug-2025 13:23:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php on line 10
+[25-Aug-2025 13:23:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php on line 12
+[25-Aug-2025 17:30:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CartController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CartController.php on line 10
+[27-Aug-2025 12:57:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php on line 18
+[27-Aug-2025 12:58:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php on line 9
+[27-Aug-2025 12:58:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php on line 12
+[27-Aug-2025 12:59:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php on line 10
+[27-Aug-2025 13:01:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php on line 10
+[27-Aug-2025 13:04:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CartController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CartController.php on line 10
+[27-Aug-2025 13:06:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php on line 8
+[27-Aug-2025 13:20:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php on line 9
+[27-Aug-2025 13:25:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php on line 8
+[27-Aug-2025 13:26:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php on line 10
+[27-Aug-2025 13:27:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php on line 12
+[27-Aug-2025 13:28:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CartController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CartController.php on line 10
+[27-Aug-2025 13:29:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php on line 9
+[27-Aug-2025 13:30:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php on line 10
+[27-Aug-2025 13:31:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php on line 18
+[28-Aug-2025 12:34:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php on line 9
+[28-Aug-2025 12:35:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php on line 8
+[28-Aug-2025 12:36:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php on line 10
+[28-Aug-2025 12:37:37 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php on line 12
+[28-Aug-2025 12:42:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php on line 18
+[28-Aug-2025 12:42:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php on line 10
+[28-Aug-2025 12:44:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CartController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CartController.php on line 10
+[28-Aug-2025 12:48:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php on line 9
+[28-Aug-2025 12:50:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/DashboardController.php on line 8
+[28-Aug-2025 12:52:48 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/WishlistController.php on line 10
+[28-Aug-2025 12:55:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/ProfileController.php on line 12
+[28-Aug-2025 12:58:47 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/VisitorsController.php on line 10
+[28-Aug-2025 13:00:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CheckoutController.php on line 18
+[28-Aug-2025 13:01:47 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CompareController.php on line 9
+[28-Aug-2025 13:04:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/tunufosx/tununue/app/Http/Controllers/CartController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/app/Http/Controllers/CartController.php on line 10

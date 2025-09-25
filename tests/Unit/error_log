@@ -1,0 +1,8 @@
+[24-Aug-2025 04:19:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Unit/ExampleTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Unit/ExampleTest.php on line 3
+[25-Aug-2025 22:04:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test() in /home/tunufosx/tununue/tests/Unit/ExampleTest.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/tunufosx/tununue/tests/Unit/ExampleTest.php on line 3

@@ -2,24 +2,26 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Modules\Product\Database\Seeders\BrandTableSeeder;
-use Modules\Product\Database\Seeders\CategorySeedTableSeeder;
-use Modules\Product\Database\Seeders\ProductDatabaseSeeder;
 
 class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
-        
-        $this->call(CategorySeedTableSeeder::class);
-        $this->call(BrandTableSeeder::class);
-        $this->call(ProductDatabaseSeeder::class);
+        // Call seeders in order
+        $this->call([
+            AdminSeeder::class,
+            CategorySeeder::class,
+            SettingsSeeder::class,
+            VendorDataSeeder::class, // Add vendor data seeder
+            PromotionSeeder::class, // Add promotion seeder
+            BannerImageSeeder::class, // Add banner image seeder
+            VendorProductSeeder::class, // Add vendor products seeder
+        ]);
     }
 }

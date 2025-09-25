@@ -1,1 +1,0 @@
-{{ @$seller->commission_type->name}} @if ($seller->commission_type->id == 1) ({{ getNumberTranslate($seller->commission_rate) }} %) @endif
