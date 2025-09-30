@@ -20,7 +20,7 @@ class VendorDataSeeder extends Seeder
             ['email' => 'vendor@example.com'],
             [
                 'name' => 'Tech Vendor',
-                'password' => Hash::make('password'),
+                'password' => Hash::make(env('SEEDER_DEFAULT_PASSWORD', 'ChangeMe123!')),
                 'role' => 'vendor',
                 'is_active' => true,
             ]
@@ -31,7 +31,7 @@ class VendorDataSeeder extends Seeder
             ['email' => 'customer@example.com'],
             [
                 'name' => 'John Customer',
-                'password' => Hash::make('password'),
+                'password' => Hash::make(env('SEEDER_DEFAULT_PASSWORD', 'ChangeMe123!')),
                 'role' => 'user',
                 'is_active' => true,
             ]
@@ -196,6 +196,6 @@ class VendorDataSeeder extends Seeder
 
         $this->command->info('Vendor data seeded successfully!');
         $this->command->info('Vendor email: vendor@example.com');
-        $this->command->info('Vendor password: password');
+        $this->command->info('Vendor password: ' . env('SEEDER_DEFAULT_PASSWORD', 'ChangeMe123!'));
     }
 }

@@ -18,7 +18,7 @@ class UserRoleSeeder extends Seeder
         User::create([
             'name' => 'Admin User',
             'email' => 'admin@tununue.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make(env('SEEDER_DEFAULT_PASSWORD', 'ChangeMe123!')),
             'role' => User::ROLE_ADMIN,
             'phone' => '+254700000001',
             'address' => 'Admin Office, Nairobi',
@@ -34,7 +34,7 @@ class UserRoleSeeder extends Seeder
         User::create([
             'name' => 'Vendor Store',
             'email' => 'vendor@tununue.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make(env('SEEDER_DEFAULT_PASSWORD', 'ChangeMe123!')),
             'role' => User::ROLE_VENDOR,
             'phone' => '+254700000002',
             'address' => 'Vendor Store, Mombasa',
@@ -50,7 +50,7 @@ class UserRoleSeeder extends Seeder
         User::create([
             'name' => 'John Customer',
             'email' => 'customer@tununue.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make(env('SEEDER_DEFAULT_PASSWORD', 'ChangeMe123!')),
             'role' => User::ROLE_CUSTOMER,
             'phone' => '+254700000003',
             'address' => '123 Customer Street, Kisumu',

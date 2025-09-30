@@ -21,7 +21,7 @@ class TestProductSeeder extends Seeder
             ['email' => 'vendor@test.com'],
             [
                 'name' => 'Test Vendor',
-                'password' => bcrypt('password'),
+                'password' => bcrypt(env('SEEDER_DEFAULT_PASSWORD', 'ChangeMe123!')),
                 'email_verified_at' => now(),
             ]
         );

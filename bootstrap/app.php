@@ -14,6 +14,9 @@ return Application::configure(basePath: dirname(__DIR__))
          $middleware->validateCsrfTokens(except: [
             '/callback',
         ]);
+         
+         // Add security headers middleware globally
+         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
