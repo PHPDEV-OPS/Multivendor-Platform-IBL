@@ -153,6 +153,27 @@ You should at minimum configure the following in `.env`:
 
 Ensure that your environment (local, staging, production) has unique settings.
 
+### Security Configuration
+
+**IMPORTANT:** For security best practices, see [SECURITY.md](SECURITY.md)
+
+Before running seeders, configure:
+```bash
+# In your .env file
+SEEDER_DEFAULT_PASSWORD=YourStrongPassword123!
+```
+
+For production environments, ensure:
+```bash
+APP_ENV=production
+APP_DEBUG=false
+SESSION_SECURE_COOKIE=true
+SESSION_HTTP_ONLY=true
+SESSION_SAME_SITE=lax
+```
+
+**Never use default passwords in production!** Change all seeded account passwords immediately after deployment.
+
 ---
 
 ## Usage & Run
